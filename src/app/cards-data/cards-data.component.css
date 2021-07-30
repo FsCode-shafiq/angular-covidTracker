@@ -1,0 +1,16 @@
+.heading1{
+    display: flex;
+    justify-content: center;
+    color: gray;
+    margin-top: 10px;
+    font-size: 45px;
+}
+
+.card-cont{
+    display: flex;
+    justify-content: space-around;
+    width: 1400px;
+    margin: auto;
+    color: gray;
+    
+}

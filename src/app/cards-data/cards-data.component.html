@@ -1,0 +1,36 @@
+
+  <h1 class="heading1">{{(covidData$|async).cardState[1]}}</h1>
+
+<div class="card-cont">
+  <div class="card text-center shadow p-3 mb-5 bg-body rounded" style="width: 15rem;">
+  
+    <div class="card-body">
+      <h5 class="card-title fs-4 text text-danger">Confirmed</h5>
+      <p class="card-text fs-5 text">{{(covidData$|async).cardState[0]}}</p>
+      
+    </div>
+  </div><div class="card text-center shadow p-3 mb-5 bg-body rounded" style="width: 15rem;">
+  
+    <div class="card-body">
+      <h5 class="card-title fs-4 text text-success">Recovered</h5>
+      <p class="card-text fs-5 text">{{(covidData$|async).cardState[7]}}</p>
+      
+    </div>
+  </div><div class="card text-center shadow p-3 mb-5 bg-body rounded" style="width: 15rem;">
+  
+    <div class="card-body">
+      <h5 class="card-title fs-4 text text-warning">Death</h5>
+      <p class="card-text fs-5 text">{{(covidData$|async).cardState[4]}}</p>
+      
+    </div>
+  </div>
+  <div class="card text-center shadow p-3 mb-5 bg-body rounded" style="width: 15rem;">
+  
+    <div class="card-body">
+      <h5 class="card-title fs-4 text text-primary">New Cases</h5>
+      <p class="card-text fs-5 text">{{(covidData$|async).cardState[3]}}</p>
+      
+    </div>
+  </div>
+</div>
+

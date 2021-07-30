@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark d-flex">
+    <img class="icon" src="../../assets/icons8-coronavirus-64 (1).png"/>
+    <div class="container-fluid mr-auto p-2">
+        
+      <a class="navbar-brand text-light ">Covid-19 Tracker</a>
+    </div>
+      <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
+        
+<div  class="dropdown">
+  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    {{countryText}}
+  </button>
+  <ul   class="dropdown-menu bg-dark overflow-scroll " aria-labelledby="dropdownMenuButton1">
+    
+    <li *ngFor="let ms of (ListData$ |async).listState">
+      <a class="dropdown-item text-light" (click)="selectCall(ms)">{{ms}}</a>
+    </li>
+  </ul>
+</div>
+      </div>
+    
+  </nav>
+ 

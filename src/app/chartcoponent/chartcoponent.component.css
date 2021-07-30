@@ -1,0 +1,10 @@
+.chart-div{
+    display: flex;
+    justify-content: center;
+    flex-grow: auto;
+    
+}
+.chart{
+
+    width: 600px;
+}
